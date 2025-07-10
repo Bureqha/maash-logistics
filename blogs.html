@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #d6e2f5;
+      color: #333;
+    }
+
+    header {
+      color: rgb(10, 74, 133);
+      padding: 30px 20px;
+      text-align: center;
+      height: 10%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .blog-post {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-post .content {
+      padding: 20px;
+    }
+
+    .blog-post h3 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #007bff;
+    }
+
+    .blog-post p {
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+
+    .blog-post a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .blog-post a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Latest Blog Posts</h1>
+  </header>
+
+  <section class="blog-container">
+    <div class="blog-post">
+      <img src="https://www.worldbank.org/content/dam/photos/780x439/2019/jun-1/Result-Ethiopia-port2.jpg" alt="Blog 1">
+      <div class="content">
+        <h3>Why Logistics Matter in 2025</h3>
+        <p>Discover how logistics is shaping the future of global trade and e-commerce.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="https://www.maishahuru.com/img/bachelor-degree-in-logistics-and-transport-management-in-tanzania.jpg" alt="Blog 2">
+      <div class="content">
+        <h3>Top 5 Shipping Trends This Year</h3>
+        <p>Learn about the key innovations revolutionizing shipping and delivery services.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="https://moovick.com/media/article/article-1-78-730.jpg" alt="Blog 3">
+      <div class="content">
+        <h3>Warehouse Automation Explained</h3>
+        <p>Explore how AI and robotics are transforming warehouse operations for good.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

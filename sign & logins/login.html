@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MAASH Logistics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+        background-color: #b9ceda;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #004d7a;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 26px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #004d7a;
+      color: white;
+      border: none;
+      border-radius: 26px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #00395a;
+    }
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .form-footer a {
+      color: #004d7a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to MAASH</h2>
+    <form action="#" method="POST">
+      <label for="email"></label>
+      <input type="text" id="email" name="email" placeholder="Email or User ID" autocomplete="off" required>
+
+      <label for="password"></label>
+      <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
+
+      <button type="submit">Login</button>
+
+      <div class="form-footer">
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 30px;
+    }
+
+    .left-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .left-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .right-content {
+      flex: 1 1 400px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .right-content h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .right-content h2 span {
+      color:  #0669a2;
+    }
+
+    .right-content p.description {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .step-number {
+      background-color: #248ef1;
+     
+      color: white;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      text-align: left;
+    }
+
+    .step-text h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .step-text p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      padding: 12px 20px;
+      font-size: 14px;
+      border-radius: 25px;
+      border: 2px solid #243ff1;
+      margin-right: 15px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .buttons .get-started {
+      background-color: #2446f1;
+      color: white;
+    }
+
+    .buttons .read-more {
+      background-color: transparent;
+      color: #2446f1;
+    }
+
+    @media(max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .right-content {
+        text-align: center;
+      }
+      .step {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="section">
+  <div class="left-image">
+    <img src="log.jpg" alt="illustration">
+  </div>
+
+  <div class="right-content">
+    <h2><span>🚚 Logistics Made Simple!</span></h2>
+    <p class="description">We understand that every shipment matters. That’s why at MAASH Logistics, we simplify the process for you</p>
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-text">
+        <h4>Book a shipment</h4>
+        <p>Our team is available to guide and assist you at every step.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-text">
+        <h4> Track Progress</h4>
+        <p>Follow your shipment live — know exactly where it is, anytime.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-text">
+        <h4>Place order</h4>
+        <p>Buy our package today to proceed</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-text">
+        <h4>Secure Delivery</h4>
+        <p>We ensure timely and secure delivery to your destination, hassle-free.</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="get-started">Get Started</button>
+      <button class="read-more">Read more</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

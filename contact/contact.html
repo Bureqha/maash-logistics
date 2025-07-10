@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MAASH Logistics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://www.nexmovelogsitics.com/assets/imgs/page/homepage1/img-faq1.png') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004d7a;
+      color: white;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-form {
+      background: rgba(230, 238, 245, 0.95);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+      margin: 60px auto;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .contact-form input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border: 1px solid #9a9a9a;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 300;
+      color: #333;
+      background-color: #e1e0e0;
+      transition: border 0.3s ease;
+    }
+
+    .contact-form input::placeholder {
+      color: #747474;
+      font-weight: 300;
+    }
+
+    .contact-form input:focus {
+      border-color: #88b4e3;
+      outline: none;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      background-color: #27507b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #003b65;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MAASH</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#services">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <label for="fname"></label>
+      <input type="text" id="fname" name="first_name" placeholder="Enter your first name" required>
+
+      <label for="lname"></label>
+      <input type="text" id="lname" name="last_name" placeholder="Enter your last name" required>
+
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MAASH Logistics. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
